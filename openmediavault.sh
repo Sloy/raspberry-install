@@ -12,6 +12,10 @@ sudo apt-get update
 sudo apt-get install openmediavault-keyring postfix -y --force-yes
 sudo apt-get install php-apc openmediavault -y --force-yes
 
+echo "deb http://packages.omv-extras.org/debian/ erasmus main" | sudo tee -a /etc/apt/sources.list.d/omv-extras-org-kralizec.list
+sudo apt-get update
+sudo apt-get install openmediavault-omvextrasorg -y --force-yes
+
 # To complete the installation you need to run the following command
 # omv-initsystem
 
