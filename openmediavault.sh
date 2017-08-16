@@ -2,6 +2,7 @@
 
 set -ev
 
+# From https://www.htpcguides.com/install-openmediavault-raspberry-pi-nas-server-minibian/
 
 echo "deb http://packages.openmediavault.org/public erasmus main" | sudo tee -a /etc/apt/sources.list.d/openmediavault.list
 wget -O - http://packages.openmediavault.org/public/archive.key | sudo apt-key add -
